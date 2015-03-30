@@ -1,5 +1,5 @@
 ![DownloadMii](https://raw.githubusercontent.com/DownloadMii/DownloadMii/master/logo.PNG "Logo")
-[![Build Status](http://build.filfatstudios.com:8080/buildStatus/icon?job=DownloadMii (3DS))](http://build.filfatstudios.com:8080/job/DownloadMii%20(3DS)/) [![Donation Status](https://img.shields.io/gratipay/filfat.svg)](https://gratipay.com/filfat/)
+[![Build Status](http://build.filfatstudios.com:8080/buildStatus/icon?job=DownloadMii (WiiU))](http://build.filfatstudios.com:8080/job/DownloadMii%20(3DS)/) [![Donation Status](https://img.shields.io/gratipay/filfat.svg)](https://gratipay.com/filfat/)
 
 =========== 
 DownloadMii is an online marketplace for homebrew applications & games.
