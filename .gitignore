@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# Data files
+src/data/OpenSansRegular.ttf
