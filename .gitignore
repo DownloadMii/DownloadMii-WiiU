@@ -1,6 +1,10 @@
 # Build
 src/build
 src/*.elf
+src/include/DownloadMii/*.*
+src/include/DownloadMii.h
+src/source/DownloadMii/*.*
+src/source/DownloadMii.cpp
 
 # Compiled Object files
 *.slo

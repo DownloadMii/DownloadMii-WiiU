@@ -1,3 +1,6 @@
 [submodule "externals/OpenSans"]
 	path = externals/OpenSans
 	url = https://github.com/CocoaPods-Fonts/OpenSans.git
+[submodule "externals/DownloadMii-Core"]
+	path = externals/DownloadMii-Core
+	url = https://github.com/DownloadMii/DownloadMii-Core.git

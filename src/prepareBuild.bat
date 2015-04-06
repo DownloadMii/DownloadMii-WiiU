@@ -1,4 +1,4 @@
-::Copyright Filiph Sandström 2015
+﻿::Copyright Filiph Sandström 2015
 
 ::The main function
 :MAIN
@@ -7,15 +7,32 @@ CLS
 ECHO DownloadMii Wii U build setup 0.1
 ECHO ---------------------------------
 ECHO.
-                                                            
-ECHO|SET /p= [*]Copying "OpenSans-Regular.ttf" from external resources...
-MKDIR data > NUL 2> nul
+
 CD ..
+                                     
+ECHO|SET /p= [*]Copying "OpenSans-Regular.ttf" from external resources...
+MKDIR data > NUL 2> NUL
 IF NOT EXIST "externals\OpenSans\" (
      CALL:EXITERROR "Cannot find the OpenSans resource!"
 )
 @COPY /B /Y "externals\OpenSans\Fonts\OpenSans-Regular.ttf" "src\data\OpenSansRegular.ttf" > NUL
 ECHO Done!
+
+ECHO|SET /p= [*]Copying "DownloadMii-Core" from external resources...
+rmdir /S /Q "src/source/DownloadMii" > NUL 2> NUL
+rmdir /S /Q "src/include/DownloadMii" > NUL 2> NUL
+@rm "src/source/DownloadMii.cpp" > NUL 2> NUL
+@rm "src/include/DownloadMii.h" > NUL 2> NUL
+IF NOT EXIST "externals\DownloadMii-Core\" (
+     CALL:EXITERROR "Cannot find the DownloadMii Core!"
+)
+@XCOPY /E /C /R /I /K /Y "externals\DownloadMii-Core" "src" > NUL
+@rm "src\LICENSE" > NUL 2> NUL
+@rm "src\README" > NUL 2> NUL
+@rm "src\.gitignore" > NUL 2> NUL
+@rm "src\.git" > NUL 2> NUL
+ECHO Done!
+
 CD src
 SET /P BUILD=Are you ready to build DownloadMii now? (Y/N)
 IF /i {%BUILD%}=={y} (GOTO:MAKE) 
