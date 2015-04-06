@@ -1,3 +1,7 @@
+# Build
+src/build
+src/*.elf
+
 # Compiled Object files
 *.slo
 *.lo
@@ -28,4 +32,4 @@
 *.app
 
 # Data files
-src/data/OpenSansRegular.ttf
+src/data/*.ttf
